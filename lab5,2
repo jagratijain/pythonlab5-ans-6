@@ -1,0 +1,16 @@
+try:
+    my_list = [1, 2, 3]
+    index = int(input("Enter an index to retrieve an element: "))
+    
+    element = my_list[index]
+    
+    print("Element at index", index, "is:", element)
+
+except IndexError:
+    print("Error: Index is out of range. Please enter a valid index.")
+
+except ValueError:
+    print("Error: Please enter a valid integer index.")
+
+except Exception as e:
+    print("An error occurred:", e)
